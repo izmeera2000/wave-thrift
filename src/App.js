@@ -62,7 +62,6 @@ const App = () => {
     useEffect(() => {
         refreshCart();
         fetchProducts();
-        fetchCart();
     }, []);
 
 
