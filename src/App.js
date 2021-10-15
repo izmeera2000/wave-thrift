@@ -28,7 +28,7 @@ const App = () => {
 
     const handleUpdateCartQty = async (productId, quantity) => {
         const {cart} = await commerce.cart.update(productId, {quantity});
-
+        
         setCart(cart);
     }
     const handleRemoveFromCart = async (productId) => {
@@ -60,8 +60,9 @@ const App = () => {
     }
 
     useEffect(() => {
-        refreshCart();
+        handleEmptyCart();
         fetchProducts();
+        fetchCart();
     }, []);
 
 
