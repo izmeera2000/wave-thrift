@@ -60,7 +60,6 @@ const App = () => {
     }
 
     useEffect(() => {
-        handleEmptyCart();
         fetchProducts();
         fetchCart();
     }, []);
