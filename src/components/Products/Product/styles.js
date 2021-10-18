@@ -17,4 +17,8 @@ export default makeStyles(() => ({
     justifyContent: 'space-between',
    
   },
+  leftAlignItem: {
+    marginLeft: "8px",
+    marginRight: "auto"
+}
 }));

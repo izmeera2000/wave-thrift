@@ -42,10 +42,10 @@ const Product = ({ product, onAddToCart }) => {
                     <Typography variant="body2" color="textSecondary" dangerouslySetInnerHTML={{__html: product.description}}/>       
                     </CardContent>
                 <CardActions disableSpacing className={classes.cardActions}>
-                <Typography variant="h5" id="left">
+                <Typography variant="h5"  className={classes.leftAlignItem} >
                             {product.price.formatted_with_symbol}
                         </Typography>     
-                    <ProductStock />
+                    <ProductStock/>
                 </CardActions>
                 
             </Card>
