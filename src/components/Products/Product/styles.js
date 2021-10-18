@@ -19,6 +19,7 @@ export default makeStyles(() => ({
   },
   leftAlignItem: {
     marginLeft: "8px",
-    marginRight: "auto"
-}
+    marginRight: "auto",
+  },
+
 }));
