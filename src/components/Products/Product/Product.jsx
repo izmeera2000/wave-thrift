@@ -32,7 +32,7 @@ const Product = ({ product, onAddToCart }) => {
 
         return (
             <Card className={classes.root}>
-                <Carousel>
+                <Carousel autoPlay={false} swipe="true" animation="fade" reverseEdgeAnimationDirection={false} timeout={100}>
                     {product.assets.map((i) => <CardMedia key={i} image={i.url} className={classes.media}  title={product.name} /> )}
                 </Carousel>
                 <CardContent>
